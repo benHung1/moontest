@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="turntable.css">
+</head>
+<body>
+    <!--轉盤html-->
+<div class="wheel">
+    <div class="wheelBox">
+      <ul id="wheel" class="wheel-list" >
+        <li style="transform: rotate(0deg);">
+          <i></i>
+          <div class="prize" >
+            <p>一等獎</p>
+          </div>
+        </li>
+        <li style="transform: rotate(45deg);">
+          <i></i>
+          <div class="prize">
+            <p>二等獎</p>
+          </div>
+        </li>
+        <li style="transform: rotate(90deg);">
+          <i></i>
+          <div class="prize">
+            <p>三等獎</p>
+          </div>
+        </li>
+        <li style="transform: rotate(135deg);">
+          <i></i>
+          <div class="prize">
+            <p>四等獎</p>
+          </div>
+        </li>
+        <li style="transform: rotate(180deg);">
+          <i></i>
+          <div class="prize">
+            <p>五等獎</p>
+          </div>
+        </li>
+              <li style="transform: rotate(225deg);">
+          <i></i>
+          <div class="prize">
+            <p>六等獎</p>
+          </div>
+        </li>
+              <li style="transform: rotate(270deg);">
+          <i></i>
+          <div class="prize">
+            <p>七等獎</p>
+          </div>
+        </li>
+        <li style="transform: rotate(315deg);">
+          <i></i>
+          <div class="prize">
+            <p>八等獎</p>
+          </div>
+        </li>
+      </ul>
+      <div class="wheel-btn">   
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Red_Arrow_Left.svg/2048px-Red_Arrow_Left.svg.png">
+      </div>
+    </div>
+  
+    <div class="quanBox">
+      <div class="quanDiv">
+        <div class="quanNum ft14">抽獎券<strong class="ft20">X5</strong></div>
+      </div>
+    </div>
+  
+    <ion-toolbar style="--min-height: auto;">
+      <button class="submitBtn ft14" shape="round" expand="block" onclick="start('七等獎')">開始</button>
+    </ion-toolbar>
+  
+    <img class="close" onclick="close()" src="https://cdn-icons-png.flaticon.com/512/161/161616.png">
+    <script src="turntable.js"></script>
+  </div>
+  
+    <script src="turntable.js"></script>
+</body>
+</html>
