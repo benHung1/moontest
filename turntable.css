@@ -1,172 +1,155 @@
 .wheel {
-    width:300px;
-    height: 300px;
-    background-size: 100% 100%;
-    position: fixed;
-    left: 9.5vw;
-    top: 42vh;
-    z-index: 10000;
-    border-radius: 1rem;
-    transform: translate(0px, -50%);
-    margin-top: 25vw;
-  }
-  
- .wheelBox {
-    position: relative;
-    width: 84vw;
-    left: -1.4vw;
-  }  
-.yun {
-    width: 67.5vw;
-    position: absolute;
-    bottom: -9.5vw;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 100;
-  }
-  
-  .wheel .wheel-list {
-    width: 84vw;
-    height: 84vw;
-    background: url("https://amedia.sanlih.com.tw/ben/2022momtest/images/lucky%20wheel-prize.png");
-    background-size: 100% 100%;
-    transition: all 3s ease-in-out;
-    position: relative;
-    z-index: 20;
-    display: block;
-    overflow: hidden;
-    margin: -50vw auto 0;
-  }
-  
-  .wheel .wheel-list li {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 84vw;
-    height: 42vw;
-    -moz-transform-origin: center bottom;
-    -webkit-transform-origin: center bottom;
-    -o-transform-origin: center bottom;
-    -ms-transform-origin: center bottom;
-    transform-origin: center bottom;
-  }
-  
-  .wheel .wheel-list li i {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: -50%;
-    display: block;
-    width: 100%;
-    height: 100%;
-    content: "";
-    transform: rotate(22.5deg) skewY(45deg);
-  }
-  
-  .wheel .wheel-list .prize {
-    position: relative;
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 50%;
-    overflow: hidden;
-    text-align: center;
-    height: 100%;
-  }
-  
-  .wheel .wheel-list .prize img {
-    height: 2.5rem;
-    margin-top: 1.5rem;
-  }
-  img {
-    width:50px;
-  }
-  
-  .wheel .wheel-list .prize p {
-    color: #fff;
-    position: absolute;
-    bottom: 4.2rem;
-    width: 100%;
-  }
-  
-  .wheel .wheel-pointer {
-    position: absolute;
-    z-index: 30;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 10vw;
-    height: 10vw;
-  }
-  
-  .wheel .wheel-pointer i {
-    position: absolute;
-    z-index: 35;
-    top: -36px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    display: block;
-    width: 60px;
-    height: 60px;
-    overflow: hidden;
-  }
-  
-  .wheel .wheel-btn {
-    position: absolute;
-    z-index: 40;
-    top: 50%;
-    left: 50%;
-    margin: auto;
-    width: 36vw;
-    transform: translate(-50%, -50%);
-  }
-  
-  .wheel .quanBox {
-    background-size: 100% 100%;
-    margin: 0 7vw;
-    margin-top: 10vw;
-    display: flex;
-    align-items: flex-end;
-  }
-  
-  .wheel .quanBox .quanDiv {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .wheel .quanBox .quanNum {
-    font-weight: bold;
-    color: #000;
-    display: flex;
-    align-items: center;
-  }
-  
-  .wheel .quanBox .quanNum img {
-    width: 2.8rem;
-    margin-right: 0.3rem;
-  }
-  
-  .wheel ion-toolbar.in-toolbar {
-    --background: none !important;
-    margin-top: 3vw;
-  }
-  
-  .wheel .submitBtn {
-    height: 12vw;
-    width: 82%;
-    margin: 0 9%;
-  }
-  
-  .wheel .close {
-    position: absolute;
-    bottom: -8vh;
-    left: 50%;
-    transform: translate(-50%);
-    width: 2.1rem;
-    z-index: 10001;
-  }
-  
+  width: 300px;
+  height: 300px;
+  background-size: 100% 100%;
+  z-index: 10000;
+  border-radius: 1rem;
+  margin-top: 50px;
+}
+
+.wheelBox {
+  position: relative;
+}
+
+.wheelRound {
+  background: url("https://amedia.sanlih.com.tw/ben/2022momtest/images/lucky%20wheel-prize.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 3s ease-in-out;
+}
+
+.wheel .wheel-list {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  z-index: 20;
+  display: block;
+  overflow: hidden;
+}
+
+.wheel .wheel-list li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 84vw;
+  height: 42vw;
+  -moz-transform-origin: center bottom;
+  -webkit-transform-origin: center bottom;
+  -o-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.wheel .wheel-list li i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -50%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transform: rotate(22.5deg) skewY(45deg);
+}
+
+.wheel .wheel-list .prize {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 50%;
+  overflow: hidden;
+  text-align: center;
+  /* height: 100%; */
+}
+
+.wheel .wheel-list .prize img {
+  height: 2.5rem;
+  margin-top: 1.5rem;
+}
+img {
+  width: 50px;
+}
+
+.wheel .wheel-list .prize p {
+  color: black;
+  position: absolute;
+  bottom: 4.2rem;
+  width: 100%;
+}
+
+.wheel .wheel-pointer {
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 10vw;
+  height: 10vw;
+}
+
+.wheel .wheel-pointer i {
+  position: absolute;
+  z-index: 35;
+  top: -36px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.wheel .wheel-btn {
+  position: absolute;
+  z-index: 40;
+  top: -5%;
+  left: 42.5%;
+  margin: auto;
+  transform: rotate(270deg);
+}
+
+.wheel .quanBox {
+  background-size: 100% 100%;
+  margin: 0 7vw;
+  margin-top: 10vw;
+  display: flex;
+  align-items: flex-end;
+}
+
+.wheel .quanBox .quanDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wheel .quanBox .quanNum {
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.wheel .quanBox .quanNum img {
+  width: 2.8rem;
+  margin-right: 0.3rem;
+}
+
+.wheel .submitBtn {
+  height: 70px;
+  width: 70px;
+  margin: 0 auto;
+  cursor: pointer;
+  z-index: 99999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+::marker {
+  font-size: 0;
+}
